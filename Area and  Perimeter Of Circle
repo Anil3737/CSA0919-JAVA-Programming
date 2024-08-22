@@ -1,0 +1,16 @@
+package Operator;
+import java.util.Scanner;
+public class AreaOfCircle{
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("Enter Radius :: ");
+		float radius=scanner.nextFloat();
+		double Area,Perimeter;
+		Area = 3.14*radius*radius;
+		Perimeter = 2*3.14*radius;
+		System.out.println("*** Area And Perimeter of CIRCLE *** ");
+		System.out.println("The Area Of Circle :: "+Area);
+		System.out.println("The Perimeter  Of Circle :: "+Perimeter);
+		scanner.close();
+	}
+}
