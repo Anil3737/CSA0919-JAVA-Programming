@@ -1,0 +1,15 @@
+package Operator;
+import java.util.Scanner;
+	public class EvenOddNumber{
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter Number :: ");
+		int Number = scanner.nextInt();
+		if(Number%2 == 0) {
+			System.out.println("Given Number is EVEN :: "+Number);
+		}else {
+			System.out.println("Given Number Is ODD :: "+Number);
+		}
+		
+	}
+}
