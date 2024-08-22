@@ -1,0 +1,23 @@
+package Operator;
+import java.util.Scanner;
+public class StudentMarks{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter Number Of Subjects :: "); // Total Number of subjects
+		int NumOfSubjects=scanner.nextInt();
+		int[] Marks=new int[NumOfSubjects];
+		int TotalMarks=0;                          // initialize total marks = 0
+		int i;
+		for(i=0;i<NumOfSubjects;i++)                    // Enter marks of Each Subject
+		{
+			System.out.println("Enter Marks of Subject "+(i+1)+" : ");
+			Marks[i]=scanner.nextInt();
+			TotalMarks +=Marks[i];                            //Calculate Total Marks
+		}
+		double Percentage = (TotalMarks/(double)(NumOfSubjects*100))*100; // calculate Percentage
+		System.out.println("**** Calculation Total Marks of Student and Percentage ****");
+		System.out.println("Sum Of Total Marks :: "+TotalMarks);
+		System.out.println("Percentage :: "+Percentage+"%");
+		
+	}
+}
