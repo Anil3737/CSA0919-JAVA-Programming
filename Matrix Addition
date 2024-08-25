@@ -1,0 +1,66 @@
+package DAY__1;
+import java.util.Scanner;
+public class MatrixAddition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		// Enter no.of Rows and Columns
+		System.out.println("Enter Number of Rows :: ");
+		int rows = input.nextInt();
+		System.out.println("Enter Number of Columns :: ");
+		int columns = input.nextInt();
+		// Initializing the Array
+		int [][] matrix1 = new int[rows][columns];
+		int [][] matrix2 = new int[rows][columns];
+		int [][] summatrix = new int [rows][columns];
+		
+		// Enter First Array Elements 
+		System.out.println("Enter First Array Elements :: ");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				matrix1[i][j] = input.nextInt();
+		  }
+		}
+		//Enter Second Array Elements
+		System.out.println("Enter Second Array Elements :: ");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				matrix2[i][j] = input.nextInt();
+			}
+		}
+		// Caluclating THe Addition Of Two Matrics
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				summatrix [i][j] = matrix1[i][j] + matrix2[i][j];
+			}
+		}
+		//Display First matrix
+		System.out.println("First Matrix is = ");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				System.out.print(matrix1[i][j]+" ");
+			}
+			System.out.println(" ");
+		}
+		// Display Second Matrix
+		System.out.println("Second Matrix is = ");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				System.out.print(matrix2[i][j]+" ");
+			}
+			System.out.println("");
+		}
+		// Display The Addition Of Matrix 
+		System.out.println("The Addition of Two Matrix");
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				System.out.print(summatrix[i][j]+" ");
+			}
+			System.out.println(" ");
+		}
+		
+        input.close();
+	}
+
+}
