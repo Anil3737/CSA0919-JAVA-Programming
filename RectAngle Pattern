@@ -1,0 +1,23 @@
+package DAY__1;
+import java.util.Scanner;
+public class RectAngle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Symbol :: ");
+		char symbol = input.next().charAt(0);
+		System.out.println("Enter Rows :: ");
+		int rows = input.nextInt();
+		System.out.println("Enter Coolumns :: ");
+		int columns = input.nextInt();
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				System.out.print(symbol+" ");
+			}
+			System.out.println(" ");
+		}
+
+	}
+
+}
