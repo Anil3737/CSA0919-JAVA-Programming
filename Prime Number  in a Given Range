@@ -1,0 +1,28 @@
+package DAY__1;
+import java.util.Scanner;
+public class PrimeNumber {
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter Starting Number :: ");
+		int snum = scanner.nextInt();
+		System.out.println("Enter Limit :: ");
+		int lnum = scanner.nextInt();
+		for(int i=snum+1;i<=lnum;i++) 
+		{
+			int count = 0;
+			for(int j=1;j<=lnum;j++) 
+			{
+				if(i%j == 0) 
+				{
+					count++;
+				}
+			}
+			if(count==2) 
+			{
+				System.out.print(i+" , ");
+			}
+			
+		}
+	}
+
+}
