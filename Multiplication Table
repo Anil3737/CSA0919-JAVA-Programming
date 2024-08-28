@@ -1,0 +1,19 @@
+package com.chiru;
+import java.util.Scanner;
+public class MultiplicationTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Number :: ");
+		int num = input.nextInt();
+		System.out.println("Enter Number of Multiples :: ");
+		int mult = input.nextInt();
+		System.out.println("The Multiplication Table :: "+num);
+		for(int i=0; i<=mult;i++) {
+			System.out.println(num+" * "+i+ " = "+num*i);
+		}
+
+	}
+
+}
