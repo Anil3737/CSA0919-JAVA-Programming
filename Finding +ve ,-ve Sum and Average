@@ -1,0 +1,37 @@
+package com.chiru;
+import java.util.Scanner;
+public class PNAvg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Number ::");
+		int num = input.nextInt();
+		int[] a = new int[num];
+		float pavg =0;
+		float navg=0;
+		int nsum=0;
+		int psum=0;
+		//int sum=0;
+		int len = a.length;
+		System.out.println("Enter "+num+"Elements ::");
+		for(int i=0;i<len;i++) {
+			a[i]=input.nextInt();
+		}
+		for(int i=0;i<len;i++) {
+			if(a[i]>0) {
+				psum += a[i];
+				pavg = psum / len;
+			}
+			else {
+				nsum += a[i];
+				navg = nsum/len;
+			}
+		
+		}
+		System.out.println("Positive Sum = "+psum);
+		System.out.println("Positive Average  = "+pavg);
+		System.out.println("Negative Sum = "+nsum);
+		System.out.println("Negative Average  = "+navg);
+	}
+}
